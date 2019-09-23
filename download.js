@@ -5,3 +5,5 @@ const download = (ctx) => {
         ctx.reply('FUNCIONA')
     }
 }
+
+module.exports = download
