@@ -6,7 +6,7 @@ const download = (ctx) => {
         ctx.reply('ERROR in arguments. Please introduce 1 and only 1 link')
     }
     else{
-        if(shell.exec('bash script_Download.sh ',ctx.command.args[0])){
+        if(shell.exec('bash script_Download.sh ' + ctx.command.args[0])){
             ctx.reply('DESCARGANDO')
         }
     }
