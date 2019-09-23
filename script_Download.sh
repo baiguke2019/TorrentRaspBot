@@ -7,7 +7,7 @@ if VAR=="BitTorrent"
     #####Starting Transmission Commands 
     echo Es Torrent
 fi
-if [-d "~/mnt/gdrive/TorrentRaspBotDownloads"];
+if [!-d "~/mnt/gdrive/TorrentRaspBotDownloads"];
     then mkdir ~/mnt/gdrive/TorrentRaspBotDownloads
 fi
 mv ~/Super_Secret_File ~/mnt/gdrive/TorrentRaspBotDownloads
