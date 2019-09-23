@@ -1,5 +1,6 @@
 const Telegraf = require('telegraf')
 const commandArgs = require('./arguments')
+const download = require('./download')
 
 const bot = new Telegraf('889371432:AAHj8cosL9FY8ngcLkd6vrD7n3h9HYsXjC0')
 
@@ -9,5 +10,6 @@ var shell = require('shelljs')
 bot.start((ctx) => ctx.reply('Welcome to TorrentRaspBot! \nWrite /help to see the available commands!') )
 bot.help((ctx) => ctx.reply('Te voy a meter un guantazo que vamos a morir los dos. Tu del guantazo y yo de la onda expansiva'))
 bot.command('author',(ctx) => ctx.reply('Author: Rafael Roman \nGithub: github.com/rafaroman18 \n2019'))
+bot.command('download',download)
 
 bot.launch()
