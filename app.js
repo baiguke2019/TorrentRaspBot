@@ -8,7 +8,7 @@ bot.use(commandArgs) //Divide the message chat into raw/command/args
 var shell = require('shelljs')
 
 bot.start((ctx) => ctx.reply('Welcome to TorrentRaspBot! \nWrite /help to see the available commands!') )
-bot.help((ctx) => ctx.reply('Te voy a meter un guantazo que vamos a morir los dos. Tu del guantazo y yo de la onda expansiva'))
+bot.help((ctx) => ctx.reply('These are the available commands:\n/download "file url" -> Downloads the file and automatically uploads it to Google Drive\n/author -> Shows the author and some info of him'))
 bot.command('author',(ctx) => ctx.reply('Author: Rafael Roman \nGithub: github.com/rafaroman18 \n2019'))
 bot.command('download',download)
 
