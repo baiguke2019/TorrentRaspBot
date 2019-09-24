@@ -9,7 +9,7 @@ const download = (ctx) => {
         ctx.reply('Downloading...')
         shell.exec('sudo bash script_Download.sh ' + ctx.command.args[0])
         ctx.reply('Downloaded.')
-        if (shell.exec('file -b ~/Super_Secret_File') == 'BitTorrent File') {
+        if (shell.exec('file -b ~/Super_Secret_File') == 'BitTorrent file') {
             ctx.reply('Detected BitTorrent File. Starting Transmission.')
             torrent
         }
